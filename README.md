@@ -2,7 +2,7 @@
 
 This is a work in progress! 
 
-1. [ ] Basic Gates
+1. Basic Gates
   1. [x] Nand       
   1. [ ] Not 
   1. [ ] And
@@ -15,13 +15,13 @@ This is a work in progress!
   1. [ ] Or16
   1. [ ] Mux16
   1. [ ] Or8Way
-2. [ ] Combinational Gates
+2. Combinational Gates
   1. [ ] HalfAdder
   1. [ ] FullAdder
   1. [ ] Add16
   1. [ ] Inc16
   1. [ ] ALU
-3. [ ] Sequential Gates
+3. Sequential Gates
   1. [ ] DFF
   1. [ ] Bit (Binary Cell)
   1. [ ] Register
@@ -38,8 +38,8 @@ This is a work in progress!
   1. [ ] Memory
   1. [ ] CPU
   1. [ ] Computer
-6. [ ] Assembler (Assembly -> Binary Code)
-7. [ ] VM
+6. Assembler (Assembly -> Binary Code)
+7. VM
   1. [ ] Implement the stack arithmetic and memory access commands
   1. [ ] Add the ability to handle the program flow and function calling commands
 
