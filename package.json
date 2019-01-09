@@ -1,0 +1,29 @@
+{
+  "name": "@kareniel/nes-emu",
+  "version": "0.0.0",
+  "description": "A NES emulator in javascript",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareniel/nes-emu.git"
+  },
+  "keywords": [
+    "nes"
+  ],
+  "author": "Jonathan Dupré <hello@jonathandupre.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kareniel/nes-emu/issues"
+  },
+  "homepage": "https://github.com/kareniel/nes-emu#readme",
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.9.2"
+  }
+}
