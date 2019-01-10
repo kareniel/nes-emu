@@ -2,7 +2,16 @@ var fs = require('fs')
 var path = require('path')
 var test = require('tape')
 
-module.exports = testOutputs
+var gates = loadGates()
+
+gates.forEach(gateCtor => testOutputs(gateCtor))
+
+function loadGates () {
+  var gatesDir = '../src/gates'
+  var filenames = fs.readdirSync(path.join(__dirname, gatesDir))
+
+  return filenames.map(filename => require(path.join(gatesDir, filename)))
+}
 
 function testOutputs (Gate) {
   var table = loadTable(Gate.name)

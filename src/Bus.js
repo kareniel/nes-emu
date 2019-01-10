@@ -11,11 +11,18 @@ module.exports = class Bus extends Emitter {
         var pin = new Pin()
 
         pin.on('change', value => {
-          this.emit('change', {
-            index,
-            value
-          })
+          this.evaluate()
+
+          this.emit('change', this.value)
         })
+
+        return pin
       })
+  }
+
+  evaluate () {
+    var binaryString = this.pins.map(pin => pin.value).join('')
+
+    this.value = parseInt(binaryString, 2)
   }
 }
