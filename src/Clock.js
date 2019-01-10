@@ -1,10 +1,10 @@
 var Pin = require('./Pin')
 
-const ONE_SEVENTY_NINE_MHZ = 1.79 * 1000 * 1000
+const NES_MASTER_CLOCK_FREQUENCY = 21441960
 
 class Clock {
-  constructor (hertz = ONE_SEVENTY_NINE_MHZ) {
-    this.frequency = hertz
+  constructor (hertz) {
+    this.frequency = hertz || Clock.DEFAULT_FREQUENCY
 
     this.out = new Pin()
   }
@@ -24,6 +24,6 @@ class Clock {
   }
 }
 
-Clock.DEFAULT_FREQUENCY = ONE_SEVENTY_NINE_MHZ
+Clock.DEFAULT_FREQUENCY = NES_MASTER_CLOCK_FREQUENCY
 
 module.exports = Clock

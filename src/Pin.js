@@ -5,7 +5,7 @@ module.exports = class Pin extends Emitter {
     super()
 
     this.value = value
-    this.connection = null
+    this.outputs = []
   }
 
   setValue (value) {
@@ -13,7 +13,9 @@ module.exports = class Pin extends Emitter {
 
     this.emit('change', value)
 
-    if (this.connection) this.connection.setValue(value)
+    this.outputs.forEach(outputPin => {
+      outputPin.setValue(value)
+    })
   }
 
   flip () {
@@ -21,6 +23,14 @@ module.exports = class Pin extends Emitter {
   }
 
   connect (pin) {
-    this.connection = pin
+    this.outputs.push(pin)
+  }
+
+  disconnect (pin) {
+    var index = this.outputs.findIndex(pin)
+
+    if (index === -1) return
+
+    this.outputs.splice(index, 1)
   }
 }

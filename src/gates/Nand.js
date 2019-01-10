@@ -1,4 +1,4 @@
-var Pin = require('./Pin')
+var Pin = require('../Pin')
 
 module.exports = class Nand {
   constructor () {

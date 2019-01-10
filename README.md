@@ -4,9 +4,9 @@ This is a work in progress!
 
 - Basic Gates
   1. [x] Nand       
-  1. [ ] Not 
-  1. [ ] And
-  1. [ ] Or
+  1. [x] Not 
+  1. [x] And
+  1. [x] Or
   1. [ ] Xor
   1. [ ] Mux 
   1. [ ] DMux
