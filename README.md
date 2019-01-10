@@ -7,7 +7,7 @@ This is a work in progress!
   1. [x] Not 
   1. [x] And
   1. [x] Or
-  1. [ ] Xor
+  1. [x] Xor
   1. [ ] Mux 
   1. [ ] DMux
   1. [ ] Not16 
